@@ -1,0 +1,8 @@
+pandas
+scikit-learn
+transformers 
+datasets
+sentence-transformers
+textstat
+matplotlib
+xgboost
