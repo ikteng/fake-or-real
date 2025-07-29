@@ -7,8 +7,7 @@ import numpy as np
 from sklearn.ensemble import RandomForestClassifier
 from scipy.stats import randint
 from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.model_selection import RepeatedStratifiedKFold, RandomizedSearchCV
+from sklearn.model_selection import StratifiedKFold, RepeatedStratifiedKFold, RandomizedSearchCV
 import joblib
 
 
