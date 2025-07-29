@@ -54,7 +54,7 @@ def extract_features(df, emb_1, emb_2):
     return np.concatenate([X_emb, X_simple], axis=1)
 
 # === Train Model ===
-def build_and_save_model(X_combined, y):
+def build_model(X_combined, y):
     param_dist = {
         "n_estimators": randint(100, 500),
         "max_depth": [None] + list(range(10, 80, 10)),
@@ -154,5 +154,5 @@ if __name__ == "__main__":
     # Combine embeddings with features
     X_combined = extract_features(df, emb_1, emb_2)
 
-    model = build_and_save_model(X_combined, y)
+    model = build_model(X_combined, y)
     predict_test(model)
